@@ -16,8 +16,5 @@
     ],
     "autoload": {
         "classmap": ["src/"]
-    },
-    "require-dev": {
-        "nette/tester": "~1.5.0"
     }
 }
