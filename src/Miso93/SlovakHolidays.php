@@ -57,7 +57,7 @@ class CzechHolidays
 		$easterSunday = (new \DateTime)->setTimestamp(EasterDate::get($year));
 
 		$holidays = [
-			$easterSunday->sub(new \DateInterval('P2D'))->format('Y-m-d') => self::$easterHolidays['friday'],
+//			$easterSunday->sub(new \DateInterval('P2D'))->format('Y-m-d') => self::$easterHolidays['friday'],
 			$easterSunday->add(new \DateInterval('P3D'))->format('Y-m-d') => self::$easterHolidays['monday'],
 		];
 
