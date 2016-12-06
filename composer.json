@@ -1,0 +1,23 @@
+{
+    "name": "miso93/czech-holidays",
+    "type": "library",
+    "description": "Simple PHP library/helper for getting Czech holidays",
+    "keywords": ["holidays", "czech"],
+    "homepage": "https://github.com/miso93/czech-holidays",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "authors": [
+        {
+            "name": "Michal Čech",
+            "email": "cech.michal@gmail.com"
+        }
+    ],
+    "autoload": {
+        "classmap": ["src/"]
+    },
+    "require-dev": {
+        "nette/tester": "~1.5.0"
+    }
+}
