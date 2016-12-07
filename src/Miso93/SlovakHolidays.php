@@ -12,7 +12,6 @@ class CzechHolidays
 	/** @var array */
 	private static $fixedHolidays = [
 		'01-01' => 'Deň obnovy samostatného Českého štátu',
-//		'01-06' => 'Zjavenie Pána (Traja králi)',
 
 		'05-01' => 'Sviatok práce',
 		'05-08' => 'Deň oslobodenia od fašizmu - 1945',
@@ -32,7 +31,7 @@ class CzechHolidays
 
 	/** @var array */
 	private static $easterHolidays = [
-//		'friday' => 'Veľký piatok',
+		'friday' => 'Veľký piatok',
 		'monday' => 'Veľkonočný pondelok'
 	];
 
@@ -57,7 +56,7 @@ class CzechHolidays
 		$easterSunday = (new \DateTime)->setTimestamp(EasterDate::get($year));
 
 		$holidays = [
-//			$easterSunday->sub(new \DateInterval('P2D'))->format('Y-m-d') => self::$easterHolidays['friday'],
+			$easterSunday->sub(new \DateInterval('P2D'))->format('Y-m-d') => self::$easterHolidays['friday'],
 			$easterSunday->add(new \DateInterval('P3D'))->format('Y-m-d') => self::$easterHolidays['monday'],
 		];
 
